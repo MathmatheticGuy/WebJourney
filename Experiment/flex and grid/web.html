@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
         
 </head>
 <body>
+    <header>
+        <h1>Flex vs Grid</h1>
+    </header>
 
-    <h1>With box-sizing</h1>
+    <main>
+        <section class="flex-container">
+            <div class="flex-sub-container">
+                <div class="box box1"> Red Flex-Box </div>
+                <div class="box box2"> Yellow Flex-Box </div>
+            </div>
+            <div class="box box3"> Green Flex-Box </div>    
+        </section>
 
-    <div class="div1">Both divs are the same size now!</div>
-    <br>
-    <div class="div2">Hooray!</div>
         
+        <div class="grid-container">
+            
+            <div class="box box1"> Red Grid-Box </div>
+            <div class="box box2"> Yellow Grid-Box </div>
+            <div class="box box3"> Green Grid-Box </div>    
+        </div>
+
+    </main>
+    
+    <script src="Purkarmmer.js"></script>
 </body>
 
 </html>

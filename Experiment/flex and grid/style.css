@@ -1,0 +1,91 @@
+:root{
+    --meth: #ffe6b2;
+    --kiss: #ee3e65;
+    --sun-flower: #ffc659;
+    --touch-grass: #09cc95;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**  BODY */
+body{
+    background-color: var(--meth);
+}
+header, flex-container{
+    text-align:center;
+}
+
+header{
+    font-size: 4em;
+    margin: 20px;
+    text-shadow: 0 1.3px 2px crimson;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    align-items:center;
+    justify-content: space-around;
+}
+.box1{
+    background-color: var(--kiss);
+}
+.box2{
+    background-color: var(--sun-flower);
+}
+.box3{
+    background-color: var(--touch-grass);
+}
+
+.box{
+    padding: 4rem;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 0 whitesmoke;
+}
+
+/*! FLEX BOX */
+.box:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.flex-sub-container{
+    display: flex;
+}
+
+
+/*! GRID */
+.box:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "red-box yellow-box"
+    "green-box green-box";
+    
+
+} 
+
+.grid-container .box1{
+    grid-area: red-box;
+}
+.grid-container .box2{
+    grid-area: yellow-box;
+}
+.grid-container .box3{
+    grid-area: green-box;
+}
