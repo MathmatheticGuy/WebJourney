@@ -1,0 +1,228 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    margin: 5px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/** HEADER */
+header{
+    margin-top:10vh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    color:royalblue;
+}
+
+.line{
+    width: 100px;
+    height: 5px;
+    background-color:royalblue;
+}
+
+
+/** MAIN */
+
+section{
+    background-color: royalblue;
+    box-shadow: 3px 3px 20px -4px black;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 69vh;
+    width: 555px;
+}
+
+/** IMAGE */
+.img-container, .image-border, .img-container img{
+    transition: border 0.464s ease-in-out, background-color 0.564s ease-in-out;
+}
+
+/* outer-circle */
+.img-container{  
+    padding: 10px;
+    border-top: 23px  solid white;
+    border-right: 4px  solid white;
+    border-left: 4px  solid white;
+    border-bottom: 2px  solid white;
+    
+    box-shadow: 0 0 10px white;
+    margin: 20px;
+    
+    background-color: yellow;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    background-size:100%;
+    
+}
+
+/* middle-circle */
+.img-container:hover{
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+.image-border{    
+    border-radius: 50%;
+    background-color:black;
+    border-top: 28px  solid springgreen;
+    border-right: 4px  solid springgreen;
+    border-left: 4px  solid springgreen;
+    border-bottom: 2px  solid springgreen;
+}
+
+.image-border:hover{
+    border: 2px solid black;
+    /* phần lồi phía dưới */
+    background-color:white; 
+}
+
+.img-container img{
+    width: 285px;
+    height: 285px;
+    
+    border-top: 30px  solid black;
+    border-right: 6px  solid black;
+    border-left: 6px  solid black;
+    box-shadow: 0 0 19px springgreen;
+
+    border-radius: 69%;
+}
+
+/* inner-circle */
+.img-container img:hover{
+    border: 2px solid black;
+    box-shadow: 0 0 50px springgreen;
+
+}
+
+
+/** ARTICLE */
+
+.review{
+    padding: 0;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+#job{
+    color:springgreen;
+}
+
+#info, #author{
+    color:aliceblue;
+}
+
+
+
+/** BUTTONS */
+.arrow{
+    background-color:transparent;
+    border:none;
+    font-size: 22px;
+    color:springgreen;
+    padding: 0;
+    text-shadow: 0 0 4px greenyellow;
+
+    /** Transition */
+    /* transition-property: transform; 
+    transition-duration: 0.5;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    transition: all 0.8 ease-in-out;
+}
+
+
+.arrow i:active{
+    transform: translateY(-2px);
+
+    color:aliceblue;
+    text-shadow: 0 0 4 black;
+}
+
+.random-btn{
+    padding: 15px;
+    margin-bottom:20px;
+
+    border: 2.2px solid springgreen;
+    background-color:royalblue;    
+    color:springgreen;
+    font-size: 19px;
+    border-radius:5px;
+    box-shadow: 0 0 10px -3px greenyellow;
+    background-color: rgba(172, 255, 47, 0.281);
+    text-transform: capitalize;
+
+    transition: all 0.3s ease-in-out ;
+}
+
+.random-btn:active{
+    transform: translateY(-4px);
+    
+    color:aliceblue;
+    background-color: rgba(172, 255, 47, 1);
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0 0 10px -3px black;
+    border: 2.2px solid springgreen;
+}
+
+/** Animation */
+@keyframes slideInLeft {
+    55%{
+        transform: translateY(-69px);
+    }
+    70%{
+        transform: translateY(6.9px);        
+    }
+    100%{
+        transform: translateY(0px);        
+    }
+}
+
+@keyframes hovering {
+    0%{
+        transform: translateY(-3.5px);
+    }
+    50%{
+        transform: translateY(3.5px);        
+    }
+    100%{
+        transform: translateY(-3.5px);        
+    }
+}
+
+
+.img-container{
+    /* animation-name: slideInLeft;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count:  1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+    
+    animation: slideInLeft 2.45s ease-in-out both;
+}
+
+#job:hover{
+    text-shadow: 0 0 5px greenyellow;
+    animation: hovering 2.5s ease-in-out infinite;
+}
+

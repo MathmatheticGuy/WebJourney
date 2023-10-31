@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+/** HEADER & BODY */
+header div, .grid-container{
+    /** inside border */
+    margin: 0 200px;
+}
+
+/** HEADER */
+/**TODO: Make Sliding Window*/
+
+header{
+    color: coral;
+    background-color: pink;
+    margin: 0;
+    padding: 300px 0px 0px 0px;
+    font-size: 70px;
+
+    background-size:23%;
+    background-position:center;
+    background-repeat:repeat;
+    background-image: url(../Image/Anime/Ahegao.png);
+
+}
+
+
+header div{
+    border: 2px solid whitesmoke;
+    padding: 500px 50px 50px 200px;   
+    
+    border-radius:5px;
+    text-shadow: 5px 5px black;
+    /* background-color:antiquewhite; */
+
+    display: flex;
+    flex-direction: column;
+}
+/* header div:hover{
+    color:white;
+    text-shadow: 5px 5px coral;
+} */
+
+
+h1, header p{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/** BODY */
+main{
+    background-color:deeppink;
+    box-shadow: 0px -22px 30px whitesmoke;
+    padding-bottom: 50px;
+
+}
+
+.grid-container {
+    color:black;
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    
+    padding: 5px;
+}
+
+/** CONTAINER1 */
+.container1{
+    display: grid;
+    grid-template-columns: 200px 250px; 
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap:10px;
+
+	grid-template-areas:
+    'header header header header header'
+    'menu main main right right'
+    'menu footer footer footer footer';
+}
+
+.grid-item{
+    border:2px solid white;    
+    background-color: rgb(4,217,255);
+    padding: 10px;
+    font-size:22px;
+    text-transform:uppercase;
+
+}
+
+.container1 .item1{
+    grid-area: header; 
+}
+.container1 .item2{
+	grid-area: menu; 
+}
+.container1 .item3{
+	grid-area: main; 
+}
+.container1 .item4{
+    grid-area: right;
+}
+.container1 .item5{
+    grid-area: footer;
+}
+
+/** CONTAINER2 */
+.container2{
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius:5px;
+
+    display: grid;
+    /* main part. Total Column declare right here */
+    grid-template-columns: auto auto auto auto auto;
+    
+    
+    gap: 5px;
+}
+
+.container2 .grid-item{
+    background-color:aquamarine;
+    text-align: center;
+}
+
+.container2 .item1{
+    grid-column: 1/3;
+}
+
+.container2 .item2{
+    grid-column: 1/3;
+}
+
+.container2 .item3{
+    grid-column: 1/3;
+}
+
+.container2 .item1, .item2, .item3{
+    padding-bottom: 70px;
+}
+.container2 .item4{
+    grid-column: 1/2;
+}
+.container2 .item5{
+    grid-row: 1/5;
+    grid-column: 3 / 6;
+}
+.container2 .item6{
+    grid-row: 5/6;
+    grid-column: 1 / 6;
+}
+.container2 .item8{
+    grid-row: 6/6;
+    grid-column: 1/2;
+}
+.container2 .item9{
+    grid-row: 6/6;
+    grid-column: 2/6;
+}
+
+.container2 .item10{
+    grid-row: 1/7;
+    grid-column: 6/8;
+}
+
+/* EFFECT */
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item7:hover{
+    box-shadow: 1px 2px 10px 4px whitesmoke;
+}
+.item6:hover, .item9:hover, .item8:hover, .item10:hover{
+    box-shadow: 1px 2px 10px 4px black;    
+}
+
+
+/** FOOTER */
+footer{
+    background-color: pink;
+    bottom:0px;
+    
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+footer p{
+    margin: 10px;
+}

@@ -1,0 +1,161 @@
+body{
+    background-color:cadetblue;
+    color: whitesmoke;
+    margin:0px;
+    padding: 0px;
+    font-family:'Trebuchet MS';
+}
+
+/* HEADER */
+header{
+    background-color: teal;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-image: url(images/minimalist-anime-4k-wallpapers.jpg);
+}
+
+header a{
+    color: crimson;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: large;    
+    font-weight: bold;
+    margin-top: 20px;
+   
+}
+
+header .mobile{
+    display:none;
+}
+
+header .logo a{
+    background: url("images/R&D_Logo.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: -60px;
+    text-indent: -99999px;
+
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 570px) {
+    header .desktop{
+        display: none;
+    }
+
+    header .mobile{
+        display: inline-block;        
+    }
+
+    header .logo a{
+        top:0px;
+    }
+    
+}
+
+@media screen and (max-width: 960px) {
+    header{
+        height: 360px
+    }
+}
+
+/* min: 539 */
+@media screen and (max-width: 730px) {
+    header{
+        height: 250px;
+    }
+    header .logo a{
+        display: none;
+    }
+}
+
+
+/* NAV */
+nav ul{
+    padding: 0px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+li:last-child{
+    margin-right: 0px;
+}
+
+h1:hover, li a:hover{
+    color:burlywood;
+}
+
+
+/* BODY */
+
+/* FEATURES */
+.features{
+    background-color:chocolate;
+    padding: 250px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.features .mobile{
+    display: none;
+}
+
+.features figure{
+    /* add another background layer */
+    color: transparent;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+
+.features figure img{
+    width: 400px;
+    border-radius: 22%;
+    /* color off-set-"hori" -"verti" "blur" */
+    /* box-shadow: black 10px 10px 10px; */
+}  
+
+.features img:hover{
+    /* border: crimson solid 2px; */
+    border: white solid 2px;
+    box-shadow: rgb(255, 253, 208) 0 0 20px;
+    
+}
+
+.features figure:hover{
+    border-radius: 40%;
+    font-size: x-large;
+    padding: 0px 0px 30px 0px;
+    /* color: rgb(226, 218, 218); */
+
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1540px) {
+    .features .desktop{
+        display: none;
+    }
+    
+    .features .mobile{
+        display: flex;  
+        flex-direction: column;
+    }
+
+}
+/* FOOTER */
+footer{
+    background-color:teal;
+    padding: 15px;
+}
+
