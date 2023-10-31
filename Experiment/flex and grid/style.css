@@ -7,6 +7,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;    
 }
 
 /**  BODY */
@@ -20,7 +21,7 @@ header, flex-container{
 header{
     font-size: 4em;
     margin: 20px;
-    text-shadow: 0 1.3px 2px crimson;
+    text-shadow: 3.3px 3.3px 2px crimson;
 }
 
 main{
@@ -28,6 +29,7 @@ main{
     height: 100vh;
     align-items:center;
     justify-content: space-around;
+    
 }
 .box1{
     background-color: var(--kiss);
@@ -41,7 +43,6 @@ main{
 
 .box{
     padding: 4rem;
-    flex-grow: 1;
     margin-bottom: 5px;
     box-shadow: 0 5px 0 whitesmoke;
 }
@@ -58,34 +59,37 @@ main{
     flex-wrap: wrap;
     
 }
+
 .flex-sub-container{
     display: flex;
 }
 
 
 /*! GRID */
-.box:active{
-    box-shadow: none;
-    transform: translateY(4px);
+.box{
+    padding: 4rem;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 0 whitesmoke;
 }
 
 .grid-container{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
     grid-template-areas: 
     "red-box yellow-box"
     "green-box green-box";
-    
-
-} 
+}
 
 .grid-container .box1{
     grid-area: red-box;
 }
+
 .grid-container .box2{
     grid-area: yellow-box;
 }
+
 .grid-container .box3{
     grid-area: green-box;
 }
