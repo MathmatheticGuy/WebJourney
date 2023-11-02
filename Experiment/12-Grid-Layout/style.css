@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+:root{
+    --DimNight: #2b3a5a;
+    --nightSky: #6981b6;    
+}
+body{
+    margin: 0;
+    font-family: 'Sometype Mono', monospace;
+    background-color: #f5f5f5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+header{
+    background: #fff;
+}
+
+header h1, nav{
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+    color: var(--DimNight);
+
+}
+header nav{
+    justify-self: end;
+    font-size: 1.2em;
+}
+nav a:hover{
+    color: var(--nightSky);
+    transform: translateY(-5.5px);
+    transition: all 0.4s ease-in-out;
+}
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/** MAIN */
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    color: var(--nightSky);
+}
+
+
+main img{
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;    
+}
+
+/** Leaving 1 empty column  */
+main .welcome{
+    grid-column: 8 / span 5; 
+}
+main h2, h3{
+    color: var(--DimNight);
+}
+
+main h2{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+main > p{
+    text-align: center;
+}
+main > .card {
+    grid-column: span 4;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover{
+    transform: translateY(-8.8px);
+    transition: all 0.44s ease-in-out;
+}
+
+/** RESPONSIVE */
+@media only screen and (max-width:925px) {
+    main img, main .welcome{
+        grid-column: span 12;
+    }
+    main{
+        margin: 0 1vh;
+    }
+}
+@media only screen and (max-width:620px) {
+    main > .card {
+        grid-column: span 12;
+    }
+}
