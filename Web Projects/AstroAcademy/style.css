@@ -34,11 +34,29 @@ body::before{
 }
 
 /*? Up Button */
-#to-top-btn{
+#btn-back-to-top{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 10px;
+    border-radius: 50%;
+    border-color: #d19f1441;
+    background-color:transparent;
+
+    display: none;
+    color: gold;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+
+    transition:  .23s ease-in-out;
+    transition-property: background-color, color;
 }
 
+#btn-back-to-top:hover, #btn-back-to-top:focus{
+    background-color: #041525;
+    color: white;
+}
