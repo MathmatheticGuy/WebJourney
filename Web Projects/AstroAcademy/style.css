@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+body::before{
+    display: block;
+    content: " ";
+    height: 60px;
+}
+
+@media (min-width: 768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+
+.bg-space{
+    background-color: #041525;
+}
+
+.text-space{
+    color:  #041525;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.rounded-right{
+    border-radius: 0;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+/*? Up Button */
+#to-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    
+}
+
