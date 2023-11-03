@@ -12,22 +12,22 @@
 </head>
 <body>
     
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
   
     <div class="container">
       <a href="#" class="navbar-brand">Bootstrap Restaurant</a>
-    </div>
-
-    <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navmenu">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse pt-2" id="navmenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#learn" class="nav-link">What You'll Learn</a>
-          </li>
           
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> What You'll Will Learned</a>
+          </li>
+            
           <li class="nav-item">
             <a href="#question" class="nav-link">Questions</a>
           </li>
@@ -35,18 +35,62 @@
           <li class="nav-item">
             <a href="#instructor" class="nav-link">Instructors</a>
           </li>
+
         </ul>  
       </div>
+
+    </div>
+
   
     </nav>
       
     <!-- Showcase -->
-    <section class="bg-dark text-light p-5 text-center">
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
       <div class="container">
-        <div>
-          <h1>Become a Astronaut</h1>
+        <div class="d-sm-flex align-items-center justify-content-between">
+          
+          <div>
+            <h1>Become a <span class="text-warning">Astronaut</span></h1>
+            <p class="lead my-4">We focusing on helping with base knowledge and opportunities of becoming an astronaut</p>
+            <button class="btn btn-primary btn-lg">Start The Enrolment</button>
+          </div>
+
+          <img src="images/APRIL-04.jpg" class="img-fluid rounded w-50 d-none d-sm-block" alt="Responsive image">
+
         </div>
-        <img src="images/APRIL-04.jpg" alt="">
+      </div>
+
+    </section>
+
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-dark btn-lg" type="button">Button</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              123
+            </div>
+          </div>
+          <div class="col-md">456</div>
+          <div class="col-md">789</div>
+        </div>
       </div>
     </section>
 
@@ -54,7 +98,7 @@
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   
+   <script src="../../node_modules/bootstrap-icons/icons/"></script>
 
   </body>
 </html>
