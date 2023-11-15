@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    padding: 20px 0;
+    margin: 0;
+}
+.menu{
+    background-color:chocolate;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    position: relative;
+}
+
+.product-categories {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    
+    border-right: 5px solid chocolate;
+}
+
+.product-categories h2 {
+    margin: 0;
+}
+
+.product-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-categories li {
+    margin: 10px 0;
+}
+
+.product-categories a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.product-contents h2{
+    text-align: center;
+    position: relative;
+    left: -90px;
+}
+
+.product-storage {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* style.css */
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.product a {
+    display: flex;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    bottom: 0px;
+}

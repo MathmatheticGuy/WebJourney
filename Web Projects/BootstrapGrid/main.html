@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../Addons/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container-md border">
+        <div class="row">
+            <div class="col-4">No Break Point</div>
+            <div class="col-auto">COl</div>
+            <div class="col-4">COl</div>
+        </div> 
+        <!-- break point at xl -->
+        <div class="row justify-content">
+            <div class="col-lg-2 col-s-4">Break point at lg</div>
+            <div class="col-lg-4 col-s-4">COl</div>
+            <div class="col-lg-4 col-s-8">COl</div>
+            <div class="col-lg-10 col-s-8">COl</div>
+        </div> 
+
+        <!-- breakpoint at md -->
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-12 col-md-4">Break point at md-medium</div>
+            <div class="col-lg-2 col-md-4">COl</div>
+            <div class="col-lg-2 col-md-8">COl</div>
+        </div> 
+   </div>
+
+   <div class="container my-5">
+        <button class="btn btn-outline-danger btn-lg">Button 1</button>
+        <button class="btn btn-outline-danger">Button 2</button>
+        <button class="btn btn-outline-danger btn-sm">Button 3</button>
+    </div>
+
+    <div id="gallery" class="container-md d-flex align-items-center justify-content-center position-relative flex-wrap">
+        
+        <div class="card m-5 d-flex position-relative ">
+            <div class="img-container">
+                <img class="card-img-top" src="https://picsum.photos/300/200" alt="Card image cap">                
+            </div>
+            
+            <div class="card-content">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#dsfsdf" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+ 
+
+    </div>
+    
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../../Addons/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="effect.js"></script>
+</body>
+</html>

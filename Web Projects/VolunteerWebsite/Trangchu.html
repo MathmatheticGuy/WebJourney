@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrangChu</title>
+    <link rel="stylesheet" href="Trangchu.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="Volunteer.png" alt="">
+            <p>
+                The HELP Group is seeking volunteers to serve our community. Fill in the
+                information below to indicate how you would like to become involved.
+            </p>
+        </header>
+    
+        
+        <section class="container">
+            <!--? Hàng 1 -->
+            <div class="col">
+                <div class="row">
+                    <div class="name">Name <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+                <div class="row">
+                    <div class="name">Phone <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+                <div class="row">
+                    <div class="name">City <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+                <div class="row">
+                    <div class="name">Zip <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+            </div>
+             
+            <!--? Hàng 2 -->
+            <div class="col">
+                <div class="row">
+                    <div class="name">Email <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+                <div class="row">
+                    <div class="name">Street <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                
+                <div class="row">
+                    <div class="name">Name <span>*</span></div>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+            </div>
+        </section>
+        
+        <section class="selector">                
+            <form>
+                <p>Include my contact information on lists distributed to other attendees.</p>
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" name="choice" value="option1">
+                        Yes
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="choice" value="option2">
+                        No
+                    </label>
+                </div>
+            </form>
+
+            <div class="dropdown-container">
+                <label for="choices">Select a choice:</label>
+                <select id="choices">
+                    <option value="option1">Meal 1</option>
+                    <option value="option2">Meal 2</option>
+                    <option value="option3">Meal 3</option>
+                    <option value="option4">Meal 4</option>
+                </select>
+            </div>
+
+            <div class="selection-container">
+                <form>
+                    <p>Days Attending</p>
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Sunday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Monday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Tuesday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Wednesday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Thursday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Friday
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Saturday
+                        </label>
+                    </div>
+                </form>
+
+                <form>
+                    <p>Activities Attending</p>
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            CEO luncheon
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Finance seminar
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Leadership seminar
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Marketing workshop
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="choice" value="option1">
+                            Teamwork seminar
+                        </label>
+                    </div>
+                </form>
+            </div> 
+        </section>
+
+        <div class="textbox">
+            <p>Special Requirements</p>
+            <textarea name="text" id="text" cols="100" rows="10"></textarea>
+        </div>
+
+        <form>
+            <p>Did you attend last years conference?</p>
+            <div class="radio-container">
+
+                <label>
+                    <input type="radio" name="choice" value="option1">
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="option1">
+                    No
+                </label>
+            </div>
+        </form>
+        <div class="footer">
+            <button class="submit">Submit</button>
+        </div>
+    </main>
+
+</body>
+</html>

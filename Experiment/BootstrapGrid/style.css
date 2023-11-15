@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+body{
+    background-color: chocolate;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.row div{
+    overflow: scroll;
+    padding: 2rem;
+    border: 2px solid white;    
+}
+
+.row div:nth-child(odd){
+    border: 2px solid blueviolet;
+}
+

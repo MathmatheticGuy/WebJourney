@@ -1,0 +1,82 @@
+:root{
+    --milky: #f0e7e0;
+}
+
+*{
+    font-family: 'Amatic SC', sans-serif;
+}
+
+body{
+    background-color: var(--milky);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.row{
+    margin: 10px; /* Adjust the margin to control the gap size */
+}
+
+[class*="col"]{
+    padding: 2rem;
+    background-color:skyblue;
+    border: 2px solid crimson;
+    color: whitesmoke;
+}    
+
+/* Gallery */
+
+.card{
+    max-width: 18rem;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    height: 30rem;
+}
+
+.img-container {
+    /** dùng relative cho phép điều chỉnh ảnh mà ko sợ ảnh bị offset*/
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-40px;
+    left:1.75%;
+    z-index: 1;
+    
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.img-container img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card-title{
+    font-size: 1em;
+}
+.card-text{
+    font-size: 0.75em;
+}
+
+.container-md .card .card-content{
+    position: relative;
+    padding: 10px 15px;
+    margin-top: -160px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;   
+}
+.container-md .card:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+
+    transition-delay: 0.3s;
+}
+
+

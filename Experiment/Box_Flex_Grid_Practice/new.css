@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+:root{
+    --DimNight: #2b3a5a;
+    --nightSky: #6981b6; 
+    --fadedSky: #2c4d92;   
+    --line: #2b3a5a2f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Sometype Mono', monospace;
+    background-color: #f5f5f5;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 0;
+}
+/** NAV */
+.side-nav{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column; 
+    border-right: 3px solid var(--line);
+    color:var(--fadedSky);   
+}
+.side-nav a{
+    color:var(--fadedSky);   
+
+}
+ul{
+    margin-right: 20px;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    margin-top: 8px;
+}
+
+
+section{
+    display: grid;
+    grid-column: 3 / span 12;
+    padding: 20px;
+}
+
+header{
+    padding: 20px;
+    background: #fff;
+    border-bottom: 3px solid var(--line);
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+/** LINK NAV */
+nav a:hover{
+    color: var(--nightSky);
+    transform: translateY(-5.5px);
+    transition: all 0.4s ease-in-out;
+}
+nav {
+    grid-template-columns: repeat(12, 1fr);
+    color: var(--fadedSky);
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    font-size: 1.2em;
+}
+.link-nav > a{
+    color: var(--fadedSky);
+}
+/** section */
+section{
+    max-width: 1200px;
+    color: var(--nightSky);
+}
+
+
+section img{
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;    
+}
+
+/** Leaving 1 empty column  */
+.link-nav {
+    grid-column: span 12; 
+    color: var(--DimNight);
+    font-weight: 500;
+}
+section .welcome{
+    grid-column: 8 / span 5; 
+}
+section h2, h3{
+    color: var(--DimNight);
+}
+
+section h2{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 40px;
+}
+section > p{
+    text-align: center;
+}
+section > .card {
+    grid-column: span 4;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+.card p{
+    margin-top: 10px;
+}
+.card:hover{
+    transform: translateY(-8.8px);
+    transition: all 0.44s ease-in-out;
+}
+
+/** RESPONSIVE */
+@media only screen and (max-width:925px) {
+    section img, section .welcome{
+        grid-column: span 12;
+    }
+    section{
+        margin: 0 1vh;
+    }
+}
+@media only screen and (max-width:620px) {
+    section > .card {
+        grid-column: span 12;
+    }
+}
