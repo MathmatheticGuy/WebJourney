@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito:wght@200;300;400;500;700&display=swap');
 :root{
     --main-color: #d676d9;
-    /* --main-color: #73d1d8; */
+    --neon: #d4eeeb;
+    --coffee: rgb(204, 157, 105);
     --black: #13131a;
     --bg: #010103;
-    --border: .1rem solid rgba(255,255,255,0.3);
+    --border: .1rem solid rgba(145, 244, 255, 0.3);
 }
+/** note cách đặt giá trị trong CSS */
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -40,6 +42,25 @@ html::-webkit-scrollbar-thumb{
 /*? d */
 body{
     background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;  
+     
 }
 
 .btn{
@@ -137,6 +158,7 @@ header .search-form label:hover{
 }
 
 /*? Set right: 0 to right: 100% after finish editing .cart-items-container  */
+/*! Research about .cart-item-container later. How to make it */
 header .cart-items-container{
     position: absolute;
     top: 100%; right: -100%;
@@ -146,8 +168,10 @@ header .cart-items-container{
     padding: 0 1.5rem;
 }
 
-header .cart-item-container.active{
-    right: 0;
+/*? .active must stay close to .cart-items-container to make effect */
+header .cart-items-container.active{
+    right: 0%;
+    border-left: var(--border);
 }
 
 header .cart-items-container .cart-item{
@@ -188,6 +212,127 @@ header .cart-items-container .btn{
     text-align: center;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    background: url(images/doubleCoffee.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content h3{
+    font-size: 6rem;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 10px var(--coffee);
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.about .row{
+    display: flex;
+    align-items:center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.menu .box-container{
+    display: grid;
+    /*? automatic columns with at least 30rem and and 1fr unit max*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img{
+    height: 20rem;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 2.3em;
+} 
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+} 
+.menu .box-container .box:hover{
+    background: var(--neon);
+}
+.menu .box-container .box:hover > *{
+    color: var(--black);
+}
+.menu .box-container .box:hover > .btn{
+    background-color: rgb(214, 137, 47);
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.products .box-container .box .icon{
+    
+}
+
+
+
+
 /* Media Queries */
 @media (max-width: 991px) {
     html{
@@ -197,6 +342,11 @@ header .cart-items-container .btn{
     .header {
         padding: 1.5rem 2rem;
     }
+
+    section{
+        padding: 2rem;
+    }
+    
 }
 
 @media (max-width: 991px) {
@@ -229,5 +379,22 @@ header .cart-items-container .btn{
         width: 90%;
         right: 2rem;
     }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
 }
 
+@media (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+}   
