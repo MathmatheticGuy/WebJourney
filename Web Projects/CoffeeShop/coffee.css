@@ -2,35 +2,29 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-      --text: #111111;
-      --background: #ffffff;
-      --primary: #fc6b03;
-      --secondary: #A2C579;
-      --accent: #30d576;
-      --border: .1rem solid rgba(145, 244, 255, 0.7);
-    }
+      --text: rgb(33, 10, 41);
+      --background: #F2FFE9;
+      --sub-background: #F9FBE7;
 
-    .heading span.adaptive{
-        color:var(--secondary);
-    }
+      --primary: #478647;
+      --secondary: #A6CF98;
+      --accent: #FA7070;
+      --sub-accent: #d4eeeb;
+      --border: .1rem solid rgba(69, 85, 78, 0.3);
 
-    
-    header{
-        background: var(--background);
     }
-}
-
-/* @media (prefers-color-scheme: dark) {
+  }
+@media (prefers-color-scheme: dark) {
     :root {
       --text: #f9f9fb;
       --background: #000000;
       --primary: #fc6b03;
       --secondary: #f0f0f0;
       --accent: #2acf6f;
-      --border: .1rem solid rgba(168, 243, 252, 0.445);
+      --border: .1rem solid rgba(208, 246, 250, 0.445);
 
     }
-} */
+}
 
 
 *{
@@ -85,6 +79,7 @@ section{
 .heading span{
     color: var(--primary);
     text-transform: uppercase;  
+     
 }
 
 .btn{
@@ -92,18 +87,18 @@ section{
     display: inline-block;
     padding: .9rem 3rem;
     font-size: 1.7rem;
-    color: var(--background);
+    color: var(--bg);
     background: var(--primary);
     cursor:pointer;
 }
 
 /** Button animation */
-.btn:hover{
+.btn{
     padding: 1rem 5.5rem;
 }
 
 header{
-    background: var(--background);
+    background: var(--sub-background);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,18 +122,18 @@ header .navbar a{
 
 header .navbar a:hover{
     color: var(--accent);
-    border-bottom: .1rem solid var(--border);
+    border-bottom: .1rem solid var(--accent);
 }
 
 header .icons div{
-    color: var(--secondary);
+    color: var(--primary);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
 
 header .icons div:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 
 #menu-btn{
@@ -167,7 +162,7 @@ header .search-form input{
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--primary);
     padding: 1rem;
     text-transform: none;
 }
@@ -179,7 +174,7 @@ header .search-form label{
 }
 
 header .search-form label:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 
 /*? Set right: 0 to right: 100% after finish editing .cart-items-container  */
@@ -212,10 +207,10 @@ header .cart-items-container .cart-item .fa-times{
     top: 1rem; right: 1rem;
     font-size: 2rem;
     cursor: pointer;
-    color: var(--black);
+    color: var(--secondary);
 }
 header .cart-items-container .cart-item .fa-times:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 
 header .cart-items-container .cart-item img{
@@ -265,7 +260,7 @@ header .cart-items-container .btn{
 .about .row{
     display: flex;
     align-items:center;
-    background: var(--text);
+    background: var(--black);
     flex-wrap: wrap;
 }
 
@@ -289,7 +284,7 @@ header .cart-items-container .btn{
 
 .about .row .content p{
     font-size: 1.6rem;
-    color: #ccc;
+    color: var(--text);
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -307,7 +302,7 @@ header .cart-items-container .btn{
     padding: 5rem;
     text-align: center;
     border: var(--border);
-    background: var(--secondary);
+    background: var(--sub-background);
 }
 
 .menu .box-container .box img{
@@ -333,10 +328,10 @@ header .cart-items-container .btn{
     text-decoration: line-through;
 } 
 .menu .box-container .box:hover{
-    background-color: var(--neon);    
+    background-color: var(--accent);    
 }
 .menu .box-container .box:hover > *{
-    color: var(--dark-neon);
+    color: var(--);
 }
 
 .menu .box-container .box:hover > .btn{
@@ -367,7 +362,7 @@ header .cart-items-container .btn{
 }
 
 .product .box-container .box .icons a:hover{
-    color:var(--primary);
+    color:var(--accent);
     transform: translateY(-1.2rem);
 }
 
@@ -390,7 +385,7 @@ header .cart-items-container .btn{
 
 .product .box-container .box .content .stars i{
     font-size: 1.5rem;
-
+    color: var(--primary);
 }
 
 .product .box-container .box .content .price{
@@ -424,7 +419,7 @@ header .cart-items-container .btn{
 .review .box-container .box p{
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #ccc;
+    color: var(--text);
     padding: 2rem 0;
 }
 
@@ -503,7 +498,7 @@ header .cart-items-container .btn{
 
 .blogs .box-container .box{
     border: var(--border);
-    color: #ccc;
+    color: var(--text);
     object-fit: cover;
 }
 
@@ -532,7 +527,7 @@ header .cart-items-container .btn{
     line-height: 1.5;
 }
 .blogs .box-container .box .content .title:hover{
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .blogs .box-container .box .content span{
@@ -567,7 +562,7 @@ footer{
     background:var(--black);
 
     text-align: center;
-    color: #ccc;
+    color: var(--text);
     padding: 2rem 0;
 }
 footer .shares{
@@ -587,12 +582,12 @@ footer .shares a{
     margin: 0 .5rem;
     
     color:var(--text);
-    border: 1px solid #ccc;
+    border: 1px solid var(--text);
     border-radius:50%;
 }
 
 footer .shares a:hover{
-    background: var(--primary);
+    background: var(--accent);
 }
 
 
@@ -607,13 +602,13 @@ footer .links{
 
 footer .links a{        
     font: 5rem;
-    color:#ccc;
-    border: 1px solid #ccc;
+    color:var(--text);
+    border: 1px solid var(--text);
     padding: 0 3rem;
     font-size: 1.5rem;
 }   
 footer .links a:hover{
-    background: var(--primary);
+    background: var(--accent);
 }        
 footer .credit{
     font-size: 1.3rem;
