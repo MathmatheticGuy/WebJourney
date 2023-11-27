@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Nunito, Amatic;
+    color: white;
+    background-color: #202731;
+    overflow: hi;
+}
+
+.blue {
+    background: blue;
+}
+
+.dark{
+    background: #222020;;
+}
+
+section {
+    /** allow its children to be absolutely in it */
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+/** curves bottom */
+.curves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curves svg {
+    position: relative;
+    display: block;
+    width: calc(167% + 1.3px);
+    height: 153px;
+
+}
+
+.curves .shape-fill {
+    fill: #1676ff;;
+}
+
+/** bubbles  */
+.bubble::after{
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background: #222020;;
+    z-index: -1;
+}
+
+.red{
+    background: #ff737a;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 204px;
+}
+
+.wave .shape-fill {
+    fill: #FF737A;
+}
+
+
+
+/** upper wavy */
+.upper-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.upper-layer svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 103px;
+}
+
+.upper-layer .shape-fill {
+    fill: #FCAF3C;
+}
+
+/** lower wavy  */
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.layer1{
+    background-image: url('images/layered-waves-mythic-trans.svg');
+}
+
+.layer2{
+    background-image: url('images/layered-waves-haikei-mythic2.svg');
+}
+.flip{
+    transform: rotate(180deg);
+}
+
+.upper-layer2 .shape-fill {
+    fill: #FCAF3C;
+}
+
+.blob{
+    background: #000b15;
+    min-height: 100px;
+}
