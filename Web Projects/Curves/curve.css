@@ -3,7 +3,6 @@ body {
     font-family: Nunito, Amatic;
     color: white;
     background-color: #202731;
-    overflow: hi;
 }
 
 .blue {
@@ -84,7 +83,6 @@ section {
 }
 
 
-
 /** upper wavy */
 .upper-layer {
     position: absolute;
@@ -120,14 +118,12 @@ section {
 .layer1{
     background-image: url('images/layered-waves-mythic-trans.svg');
 }
-
 .layer2{
     background-image: url('images/layered-waves-haikei-mythic2.svg');
 }
 .flip{
     transform: rotate(180deg);
 }
-
 .upper-layer2 .shape-fill {
     fill: #FCAF3C;
 }
