@@ -29,3 +29,22 @@ window.onscroll = () => {
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+
+
+// cart-container
+// Get all elements with the class 'removeBtn'
+var removeButtons = document.getElementById('.removeBtn');
+
+// Loop through each remove button and add a click event listener
+removeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        // Find the parent cart item and remove it
+        var cartItem = button.closest('.cart-item');
+        cartItem.remove();
+
+        // Recalculate and update the total price
+        updateTotalPrice();
+    });
+});
+
+ 

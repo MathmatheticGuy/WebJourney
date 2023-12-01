@@ -11,7 +11,6 @@
       --accent: #FA7070;
       --sub-accent: #d4eeeb;
       --border: .1rem solid rgba(69, 85, 78, 0.3);
-
     }
   }
 @media (prefers-color-scheme: dark) {
@@ -94,7 +93,7 @@ section{
 
 /** Button animation */
 .btn:hover{
-    padding: 1rem 5rem;
+    padding: 0.9rem 5rem;
     background:var(--accent);
 }
 
@@ -188,16 +187,39 @@ header .cart-items-container{
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: var(--background);
-    padding: 0 1.5rem;
+    padding: 0rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+header .cart-items-container .card{
+    padding: 0;
+    margin: 0;
+}
 /*? .active must stay close to .cart-items-container to make effect */
 header .cart-items-container.active{
     right: 0%;
-    border-left: var(--border);
+    /* border-left: var(--border); */
 }
 
-header .cart-items-container .cart-item{
+header .cart-items-container .payment{
+    margin: 4rem 0;
+    font-size: 2rem;
+}
+header .cart-items-container .payment .total{
+    display: flex;
+    border-top: 1px solid var(--text);
+    padding: 1rem 0;
+}
+header .cart-items-container .payment .total .total-price{
+    margin-left: 1rem;
+}
+header .cart-items-container .payment .btn:hover{
+    padding: 0.9rem 1rem;
+}
+
+
+header .cart-items-container .cart .cart-item{
     position: relative;
     margin: 2rem 0;
     display: flex;
@@ -214,6 +236,14 @@ header .cart-items-container .cart-item .fa-times{
 }
 header .cart-items-container .cart-item .fa-times:hover{
     color: var(--accent);
+    transform: rotate(90deg);
+}
+
+header .cart-items-container .cart-item .content .cart-quantity{
+    width: 5rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    background-color:var(--background);
 }
 
 header .cart-items-container .cart-item img{
@@ -398,7 +428,7 @@ header .cart-items-container .btn{
 }
 
 .product .box-container .box .content .price{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--text);
 }
 
@@ -499,6 +529,9 @@ header .cart-items-container .btn{
     text-transform: none;
     background: none;
 }
+.contact .row form .btn{
+    padding: 1.6rem 2.6rem;
+}
 
 /** Blog */
 .blogs .box-container{
@@ -546,7 +579,7 @@ header .cart-items-container .btn{
     color: var(--primary);
     
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 
 }
 .blogs .box-container .box .content p{
@@ -555,10 +588,9 @@ header .cart-items-container .btn{
 }
 
 .blogs .box-container .box .content .btn{
-    padding: .1rem 4rem;
+    padding: 1.2rem 4rem;
     margin-top: 1.5rem;
-    font-size: 1.5rem;
-    font-weight:600;
+    font-size: 1.4rem;
     position: relative;
     transition: all .4s linear;
 
@@ -566,8 +598,8 @@ header .cart-items-container .btn{
 
 /** Footer */   
 footer{
-    background:var(--black);
-
+    border-top: 0.5px solid var(--text);
+    margin-top: 2rem;
     text-align: center;
     color: var(--text);
     padding: 2rem 0;
@@ -594,7 +626,9 @@ footer .shares a{
 }
 
 footer .shares a:hover{
-    background: var(--accent);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    transform: translateY(-5px);
 }
 
 
@@ -611,7 +645,7 @@ footer .links a{
     font: 5rem;
     color:var(--text);
     border: 1px solid var(--text);
-    padding: 0 3rem;
+    padding: 1rem 3rem;
     font-size: 1.5rem;
 }   
 footer .links a:hover{
