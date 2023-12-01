@@ -5,5 +5,11 @@ const tween = KUTE.fromTo(
     {repeat: 999, duration: 3000, yoyo: true},
 )
 
-tween.start()
+const tween2 = KUTE.fromTo(
+    '#blob2',
+    {path: '#blob3'},
+    {repeat: 999, duration: 3000, yoyo: true},
+)
 
+tween.start()
+tween2.start()

@@ -132,7 +132,14 @@ section {
     fill: #FCAF3C;
 }
 
+/** Blob */
 .blob{
     background: #000b15;
-    min-height: 100px;
+}
+.blob p, h1{
+    z-index: 1;
+}
+.blob-motion{
+    position: absolute;
+    transform: translateY(-20%);
 }
