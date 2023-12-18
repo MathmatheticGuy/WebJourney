@@ -1,0 +1,21 @@
+table, th, td{
+    border: 1px solid black;
+}
+tr th{
+    width: 45%;    
+    color: aliceblue;
+    background: darkslateblue;
+}
+
+tr th:first-child{
+    width: 10%;
+}
+tr td:first-child:not(.total){
+    background: crimson;
+}
+
+thead, tbody{
+    border: 1px solid black;
+
+}
+

@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Add some padding to the content to prevent it from being hidden under the header */
+    main {
+      margin-top: 60px; /* Adjust this value based on your header height */
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div>Hellow</div>
+
+  <header>
+    <h1>Sticky Header</h1>
+  </header>
+
+  <main>
+    <p>Your website content goes here...</p>
+  </main>
+
+  <script>
+    // JavaScript to add and remove the 'sticky' class when scrolling
+    window.onscroll = function() {
+      var header = document.querySelector('header');
+      if (window.pageYOffset > 0) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    };
+  </script>
+
 </body>
 </html>
