@@ -1,0 +1,32 @@
+/* Basic CSS for Textbox */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* CSS for Button */
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+main{
+    margin: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    padding: 10px;
+    height: auto;
+    border: 1px solid black;
+}
+

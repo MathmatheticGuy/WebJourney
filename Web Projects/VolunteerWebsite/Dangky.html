@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DangKi</title>
     <link rel="stylesheet" href="DangKi.css">
-    <link rel="stylesheet" href="../../Addons/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../../Addons/fontawesome-free-6.4.2-web/css/all.css">
 
     
 </head>
@@ -14,21 +14,7 @@
     <main>        
         <h1>Registration</h1>    
 
-        <div class="register-bar">
-
-            <form>
-                <div class="radio-container">
-                    <label>
-                        <input type="radio" name="choice" value="option1">
-                        Personal
-                    </label>
-                    
-                    <label>
-                        <input type="radio" name="choice" value="option2">
-                        Company
-                    </label>
-                </div>
-            </form>      
+        <div class="register-bar">     
     
             <div class="info">
                 <!--! Thay icon email để nó bé lại -->
@@ -36,7 +22,7 @@
                     <div class="icon-holder">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <input placeholder=" Email" type="email" id="email" name="email" required>
+                    <input id="email" placeholder=" Email" type="email" id="email" name="email" required>
                 </div>
     
                 <div class="info-input">
@@ -69,17 +55,33 @@
                 </div>
             </form>      
 
-            <div class="register-footer">
-                <p class="policy">
-                    By clicking Register, you agree on our <a href="Trangchu.html">Privacy Policy for W3Docs.</a>
-                </p>
-                <button class="submit-btn" type="submit">Submit</button>
+            <div class="info-container">
+                <input type="date" id="birthday" name="birthday">
+                <div class="dropdown">
+                    <button class="dropbtn">National</button>
+                    <div class="dropdown-content">
+                        <a href="#">VN</a>
+                        <a href="#">USE</a>
+                        <a href="#">China</a>
+                    </div>
+                </div>
             </div>
+
+            
+            <!-- <p class="policy">
+                Have an Account <a href="Trangchu.html">Login</a>
+            </p> -->
+
+            <div class="register-footer">
+                <button class="submit btn" type="submit">Submit</button>
+                <button class="cancel btn" type="submit">Cancel</button>
+            </div>
+        
             
         </div>
     </main>
 
 
-   
+   <script src="dangky.js"></script>
 </body>
 </html>
