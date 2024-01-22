@@ -5,16 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Window Information</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- focus on the textbox -->
     <main>
-        Username
-        <input type="Login" id="name" onblur="check();">
-        Password
-        <input type="Register" id="pass" onblur="check();">
-        <button class="btn"> Login </button>
+        <!-- Username
+        <input type="Login" id="name" onblur="check();"> -->
+        <h1>What is the power of 2? </h1>
+        <input type="Register" id="pass"">
+        <button class="btn 2" onclick="check()"> submit </button>
+        
+        <form>
+            <div class="radio-container">
+                <label class="basic">
+                    <input type="radio" name="choice" value="option1">
+                    Basic
+                </label>
+                
+                <label >
+                    <input class="advance" type="radio" name="choice" value="option2">
+                    Advance
+                </label>
+  
+            </div>
+        </form>      
 
+        <p id="result"> </p>
+
+        <div class="bomba">
+                <input id="checkbox1" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> C#</label><br>
+                <input id="checkbox2" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Java</label><br>
+                <input id="checkbox3" type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Python</label><br><br>
+                <button class="submit_btn"> submit </button>
+        </div>
     </main>
 
 

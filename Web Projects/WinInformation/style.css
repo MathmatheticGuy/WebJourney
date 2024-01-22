@@ -20,7 +20,7 @@ button {
 
 main{
     margin: 20px;
-    width: 200px;
+    width: 340px;
     display: flex;
     flex-direction: column;
     height: 50px;
@@ -30,3 +30,11 @@ main{
     border: 1px solid black;
 }
 
+p{
+    /* display: none; */
+}
+
+.bomba{
+    display: none;
+    border: 1px solid black;
+}
