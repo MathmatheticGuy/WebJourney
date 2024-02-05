@@ -1,7 +1,7 @@
 // CLOSURE
 
-function makeMultiplier (multiplier) {
-    function b(){
+function makeMultiplier(multiplier) {
+    function b() {
         console.log("Multiplier is: " + multiplier);
     }
     b();
