@@ -5,7 +5,7 @@ var A = {};
 A.name = "Marrie";
 
 // Declare Namespace function
-hi = () => {
+A.hi = () => {
     // Connect to name space variable specifically
     console.log("Ich Liebe Dich, " + A.name);
 }
