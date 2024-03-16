@@ -16,5 +16,11 @@ function makeMultiplier(multiplier) {
 // equal to var multiplier = 2;
 var doubleAll = makeMultiplier(2);
 console.log(doubleAll)
+
+
 console.log(doubleAll(10)); //? its own execute environment 
+
+console.log(doubleAll(15)); //? its own execute environment 
+
+console.log(doubleAll(20)); //? its own execute environment 
 

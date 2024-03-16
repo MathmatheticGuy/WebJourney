@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Generator</title>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1>Hello There</h1>
+    </div>
+    
+    <script>
+        console.log("Helldfdfglo");
+        // https:catfact.ninja/breeds?page=1
+        var url = `https://catfact.ninja/breeds?limit=1`;
+        fetch(url)
+            // if not correct throw error else
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return res.json();
+            })
+            // everything under res is not in res's scope
+    
+            .then(data => {
+                // console.log all I want here beccause 'data' only available within a scope
+                console.log(data);
+                console.log('\nThis is COOL: ', data.current_page);
+            }) 
+            .catch (error => console.error("Error fetching cat breeds:", error));
+            // This data is undefind because it out of scope
+            console.log('\nThis is COOL: ', data.current_page);
+            
+            
+
+    </script>
+
+</body>
+</html>
